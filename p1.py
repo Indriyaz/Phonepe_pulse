@@ -43,7 +43,7 @@ df2 = pd.read_sql_query(query_1, cnx)
 total=df2["count"].sum()
 df3= df2[["name","count"]]
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3 = st.columns((4,4,2))
 col1.metric(" Transctions",total)
 col2.metric("Hello",total)
 col3.metric("Humidity", "86%", "4%")
