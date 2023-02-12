@@ -35,7 +35,7 @@ table_name = f"{selected_option_y}_{selected_option}_{selected_option_q}"
 query = f"SELECT * FROM {table_name}"
 query_1 = "SELECT * FROM 2018_trans"
 df = pd.read_sql_query(query, cnx)
-cnx.close()
+
 
 # Row A
 st.markdown('### Metrics')
@@ -84,3 +84,5 @@ with c2:
 c5 ,c6 =st.columns((5,5))
 with c5:
    st.dataframe(df[["count", "amount", "name"]],800)
+
+cnx.close()
