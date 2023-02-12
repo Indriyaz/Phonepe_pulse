@@ -76,9 +76,9 @@ with c2:
     st.markdown('### Donut chart')
     if selected_option_y == "2018":
        
-        fig1 = px.pie(df2, values='count', names='name', title='Transactions',
+        fig1 = px.pie(df2, values='count', names='name', title='Transactions',hole = .3
                       hover_data=['count'], labels={'count':'Transactions'})
-        fig1.update_traces(textposition='outside', textinfo='percent+label')
+        fig1.update_traces(textposition='auto', textinfo='percent+label')
         st.plotly_chart(fig1)
 c5 ,c6 =st.columns((5,5))
 with c5:
