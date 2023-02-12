@@ -75,8 +75,8 @@ with c1:
 with c2:
     st.markdown('### Donut chart')
     if selected_option_y == "2018":
-        df = pd.read_csv("C:/Users/R2/Desktop/pulse/data/map/transaction/hover/country/india/2018/1.csv")
-        fig1 = px.pie(df, values='count', names='name', title='Transactions',hole=.3,
+       
+        fig1 = px.pie(df2, values='count', names='name', title='Transactions',hole=.3,
                       hover_data=['count'], labels={'count':'Transactions'})
         fig1.update_traces(textposition='inside', textinfo='percent+label')
         st.plotly_chart(fig1)
