@@ -18,6 +18,10 @@ with st.sidebar:
     selected_option = st.selectbox("Select Map", options)
 with st.sidebar:
     selected_option_q = st.selectbox("Select a Quarter", options_q)
+st.sidebar.markdown('''
+---
+Created with ❤️ by [Indriyaz](https://www.linkedin.com/in/riyaz-sk).
+''')
 
 # Connect to the MySQL database
 cnx = mysql.connector.connect(
